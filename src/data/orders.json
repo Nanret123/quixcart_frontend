@@ -1,0 +1,128 @@
+[
+  {
+    "_id": "ORDER001",
+    "user": "USER123",
+    "products": [
+      {
+        "productId": "PROD001",
+        "name": "Wireless Headphones",
+        "price": 120.99,
+        "quantity": 1,
+        "image": "https://example.com/headphones.jpg"
+      },
+      {
+        "productId": "PROD002",
+        "name": "Bluetooth Speaker",
+        "price": 80.50,
+        "quantity": 1,
+        "image": "https://example.com/speaker.jpg"
+      }
+    ],
+    "totalPrice": 201.49,
+    "taxAmount": 10.07,
+    "status": "pending",
+    "paymentStatus": "pending",
+    "paymentReference": null,
+    "shippingAddress": "ADDR001",
+    "createdAt": "2025-03-05T10:15:00Z",
+    "updatedAt": "2025-03-05T10:15:00Z"
+  },
+  {
+    "_id": "ORDER002",
+    "user": "USER456",
+    "products": [
+      {
+        "productId": "PROD003",
+        "name": "Gaming Mouse",
+        "price": 45.99,
+        "quantity": 2,
+        "image": "https://example.com/mouse.jpg"
+      }
+    ],
+    "totalPrice": 91.98,
+    "taxAmount": 4.60,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentReference": "FLUTTERWAVE12345",
+    "shippingAddress": "ADDR002",
+    "createdAt": "2025-03-04T14:20:00Z",
+    "updatedAt": "2025-03-04T15:00:00Z"
+  },
+  {
+    "_id": "ORDER003",
+    "user": "USER789",
+    "products": [
+      {
+        "productId": "PROD004",
+        "name": "Smartphone",
+        "price": 650.00,
+        "quantity": 1,
+        "image": "https://example.com/smartphone.jpg"
+      },
+      {
+        "productId": "PROD005",
+        "name": "Screen Protector",
+        "price": 15.99,
+        "quantity": 1,
+        "image": "https://example.com/screen-protector.jpg"
+      }
+    ],
+    "totalPrice": 665.99,
+    "taxAmount": 33.30,
+    "status": "shipped",
+    "paymentStatus": "paid",
+    "paymentReference": "FLUTTERWAVE67890",
+    "shippingAddress": "ADDR003",
+    "createdAt": "2025-03-03T09:00:00Z",
+    "updatedAt": "2025-03-03T12:00:00Z"
+  },
+  {
+    "_id": "ORDER004",
+    "user": "USER101",
+    "products": [
+      {
+        "productId": "PROD006",
+        "name": "Laptop",
+        "price": 1200.00,
+        "quantity": 1,
+        "image": "https://example.com/laptop.jpg"
+      }
+    ],
+    "totalPrice": 1200.00,
+    "taxAmount": 60.00,
+    "status": "delivered",
+    "paymentStatus": "paid",
+    "paymentReference": "FLUTTERWAVE54321",
+    "shippingAddress": "ADDR004",
+    "createdAt": "2025-03-02T17:30:00Z",
+    "updatedAt": "2025-03-04T08:45:00Z"
+  },
+  {
+    "_id": "ORDER005",
+    "user": "USER202",
+    "products": [
+      {
+        "productId": "PROD007",
+        "name": "Smartwatch",
+        "price": 299.99,
+        "quantity": 1,
+        "image": "https://example.com/smartwatch.jpg"
+      },
+      {
+        "productId": "PROD008",
+        "name": "Wireless Charger",
+        "price": 49.99,
+        "quantity": 1,
+        "image": "https://example.com/charger.jpg"
+      }
+    ],
+    "totalPrice": 349.98,
+    "taxAmount": 17.50,
+    "status": "cancelled",
+    "paymentStatus": "failed",
+    "paymentReference": null,
+    "shippingAddress": "ADDR005",
+    "createdAt": "2025-03-01T11:00:00Z",
+    "updatedAt": "2025-03-01T12:00:00Z"
+  }
+]

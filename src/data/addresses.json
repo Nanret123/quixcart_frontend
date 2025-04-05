@@ -1,0 +1,26 @@
+[
+  {
+    "_id": 1,
+    "user": "65e71b9f8d3e4b001fc3a5d1",
+    "phoneNumber": "+2348012345678",
+    "alternativePhoneNumber": "+2348098765432",
+    "streetName": "12 Adeola Street",
+    "nearestLandMark": "Opposite City Mall",
+    "lgaOfResidence": "Ikeja",
+    "notes": "Deliver between 9 AM and 12 PM",
+    "city": "Lagos",
+    "state": "Lagos"
+  },
+  {
+    "_id": 2,
+    "user": "65e71b9f8d3e4b001fc3a5d2",
+    "phoneNumber": "+2348023456789",
+    "alternativePhoneNumber": "+2348087654321",
+    "streetName": "45 Olufemi Avenue",
+    "nearestLandMark": "Near National Stadium",
+    "lgaOfResidence": "Surulere",
+    "notes": "Call before delivery",
+    "city": "Lagos",
+    "state": "Lagos"
+  }
+]
