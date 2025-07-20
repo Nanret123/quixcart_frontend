@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# 🛍️ E-Commerce Frontend – React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the E-Commerce platform, built using **React**, **TypeScript**, and **Vite**. It interfaces with a backend (NestJS) and provides a complete customer experience—from product browsing to checkout with payment integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 **Authentication** (Login, Register, Persisted Sessions)
+- 🛒 **Cart & Checkout Flow**
+- 💳 **Payment Integration via Flutterwave**
+- 📦 **Product Listing & Details**
+- ✍️ **Product Reviews**
+- 📧 **Email Alerts**
+- 🌍 **Role-based Access (e.g., Admin Panel)**
+- 🌈 **Responsive UI & Animations**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+| Category         | Tech Stack                             |
+|------------------|----------------------------------------|
+| **Framework**    | React + TypeScript                     |
+| **Tooling**      | Vite                                   |
+| **State**        | Redux Toolkit, Redux Persist           |
+| **Routing**      | React Router DOM                       |
+| **Forms**        | Formik + Yup                           |
+| **Animation**    | Framer Motion                          |
+| **UI Icons**     | Lucide React, Remixicon                |
+| **Charts**       | Recharts                               |
+| **Date Handling**| date-fns                               |
+| **Notifications**| React Toastify                         |
+| **Payments**     | flutterwave-react-v3                   |
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── assets/              # Static files (images, icons, etc.)
+├── components/          # Shared reusable components
+├── features/            # Redux slices and features (cart, auth, etc.)
+├── hooks/               # Custom React hooks
+├── pages/               # Route-based views (Home, Product, Admin, etc.)
+├── routes/              # Route definitions and guards
+├── services/            # API service handlers
+├── store/               # Redux store configuration
+├── types/               # TypeScript interfaces & types
+├── utils/               # Utility functions (formatting, validation)
+└── App.tsx              # Root component
 ```
+## 📦 Installation
+```bash
+git clone https://github.com/Nanret123/quixcart_frontend.git
+cd quixcart_frontend
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# Install dependencies
+npm install
+```
+## 🚀 Running the App
+```bash
+# Development server
+npm run dev
 ```
